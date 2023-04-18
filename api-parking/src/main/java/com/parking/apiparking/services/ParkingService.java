@@ -1,10 +1,11 @@
 package com.parking.apiparking.services;
 
 import com.parking.apiparking.entities.Car;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Service    // → Todas las clases de logica de negocio - Todas las clases que estan en el paquete de servicio
 public class ParkingService {
     private List<Car> parkingLot;
 
