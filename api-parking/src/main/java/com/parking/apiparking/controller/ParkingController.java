@@ -24,7 +24,7 @@ public class ParkingController {
     }
      2° Forma ↓
     */
-    @Autowired
+
     private ParkingService parkingService;
 
     public ParkingController(ParkingService parkingService) {
@@ -37,7 +37,7 @@ public class ParkingController {
         return ResponseEntity.ok(this.parkingService.getAllCars());
     } @PostMapping ("/cars")
     public ResponseEntity<Car> addCar(Car car){
-        this.parkingService.add.Car(car);
+        this.parkingService.addCar(car);
         return new ResponseEntity<>(car, HttpStatus.CREATED);
     }
 }
