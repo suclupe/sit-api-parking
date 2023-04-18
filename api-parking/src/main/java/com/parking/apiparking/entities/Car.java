@@ -16,4 +16,7 @@ import java.time.LocalDateTime;
             this.color = color;
             this.entryTime = entryTime;
         }
+        public String getLicensePlate() { return licensePlate; }
+
+        public void setLicensePlate(String licensePlate) {this.licensePlate = licensePlate;}
     }
